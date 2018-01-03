@@ -26,26 +26,26 @@ var config = {
   },
   lockOpts: {
     //  To use locker-server, uncomment this:
-    lockerServer: {
-      host: 'localhost',
-      port: 3231,
-    },
+   // lockerServer: {
+      //host: 'localhost',
+     // port: 3231,
+   // },
   },
-  messageBrokerOpts: {
+ messageBrokerOpts: {
     //  To use message broker server, uncomment this:
-    messageBrokerServer: {
-      url: 'http://localhost:3380',
-    },
+   // messageBrokerServer: {
+     // url: 'http://localhost:3381',
+   // },
   },
   blockchainExplorerOpts: {
     btc: {
       livenet: {
         provider: 'insight',
-        url: 'https://insight.bitpay.com:443',
+        url: 'http://159.203.24.231:2002',
       },
       testnet: {
         provider: 'insight',
-        url: 'https://test-insight.bitpay.com:443',
+        url: 'http://159.203.24.231:2002',
         // url: 'http://localhost:3001',
         // Multiple servers (in priority order)
         // url: ['http://a.b.c', 'https://test-insight.bitpay.com:443'],
@@ -54,21 +54,21 @@ var config = {
     bch: {
       livenet: {
         provider: 'insight',
-        url: 'https://cashexplorer.bitcoin.com',
+        url: 'http://159.203.24.231:2002',
       },
     },
   },
-  pushNotificationsOpts: {
-    templatePath: './lib/templates',
-    defaultLanguage: 'en',
-    defaultUnit: 'btc',
-    subjectPrefix: '',
-    pushServerUrl: 'https://fcm.googleapis.com/fcm',
-    authorizationKey: '',
-  },
+  //pushNotificationsOpts: {
+    //templatePath: './lib/templates',
+   // defaultLanguage: 'en',
+   // defaultUnit: 'btc',
+   // subjectPrefix: '',
+  //  pushServerUrl: 'https://fcm.googleapis.com/fcm',
+   // authorizationKey: '',
+  //},
   fiatRateServiceOpts: {
-    defaultProvider: 'BitPay',
-    fetchInterval: 60, // in minutes
+ defaultProvider: 'BitPay',
+fetchInterval: 60, // in minutes
   },
   // To use email notifications uncomment this:
   // emailOpts: {
